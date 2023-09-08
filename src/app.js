@@ -4,10 +4,10 @@ const port = process.env.PORT || 3000;
 require("./db/connection");
 
 const Student = require("./schema/pantries");
-const stdRoute = require('./routers/p_routes');
+const panRoute = require('./routers/p_routes');
 
 app.use(express.json());
-app.use(stdRoute);
+app.use(panRoute);
 
 
 app.listen(port, () => {
